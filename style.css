@@ -254,26 +254,19 @@ max-width: 100%;
     color: var(--light);
 
  }
- .column {
-    float: left;
-    width: 25%;
-    padding: 0 10px;
-    margin: 35px;
- }
- .row:after {margin: 0 -5px;}
-
- .row:after {
-    content: "";
-
-    display: table;
-    clear:both;
- }
- .card {
+ 
+ .cards {
     box-shadow: var(--shadow);
     padding: 16px;
     text-align: center;
-    
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
  }
+ 
+   
+
  .myForm {
     display: grid;
     grid-template-areas: 
@@ -334,6 +327,11 @@ max-width: 100%;
     grid-area: submit;
   }
   /*media queries*/
+  @media(min-width: 900px) {
+    .card {
+      grid-template-columns: repeat(2. 1fr);
+    }
+  }
   @media(max-width: 700px) {
    .top-conatainer {
       grid-template-areas: 
@@ -358,11 +356,9 @@ max-width: 100%;
       font-size: 0.8rem;
       display: block;
       width: 100%;
+      grid-template-columns: repeat(2. 1fr);
+   }
 
-   }
-   .card .btn {
-      font-size: 0.6rem;
-   }
    .myForm {
       max-width: 100%;
    }
@@ -375,12 +371,9 @@ max-width: 100%;
       'top-box-a'
       'top-box-b'
     }
-    .card {
-      width: 100%;
-      display: block;
-      margin-bottom: 20px;;
-    }
+   
     .myForm {
       max-width: 100%;
     }
   }
+  
