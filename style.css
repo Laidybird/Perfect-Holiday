@@ -1,4 +1,4 @@
-/*CSS Variables*/
+
 :root {
     --primary: rgb(255, 255, 255);
     --dark: #3b7dd4;
@@ -350,6 +350,18 @@ max-width: 100%;
       text-align: center;
       margin: auto;
    }
+   .card {
+      font-size: 0.8rem;
+      display: block;
+      width: 100%;
+
+   }
+   .card .btn {
+      font-size: 0.6rem;
+   }
+   .myForm {
+      max-width: 100%;
+   }
 
   }
   @media(max-width: 500px) {
@@ -358,5 +370,13 @@ max-width: 100%;
       'showcase'
       'top-box-a'
       'top-box-b'
+    }
+    .card {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;;
+    }
+    .myForm {
+      max-width: 100%;
     }
   }
