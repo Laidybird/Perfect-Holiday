@@ -102,6 +102,10 @@ max-width: 100%;
     box-shadow: var(--shadow);
     padding: 1.5rem;
  }
+ .top-box .btn a:hover{
+      background: var(--light);
+      color: var(--dark);
+ }
  .top-box .price {
     font-size: 2.5rem;
  }
