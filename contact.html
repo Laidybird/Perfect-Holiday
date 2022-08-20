@@ -23,63 +23,8 @@
         </nav>
     </div>
     <form class="myForm">
-        <fieldset id="customer">
-          <label for="customer_name">Name </label>
-          <input type="text" name="customer_name" id="customer_name" required>
-      
-          <label for="phone_number">Phone </label>
-          <input type="tel" name="phone_number" id="phone_number">
-      
-          <label for="email_address">Email </label>
-          <input type="email" name="email_address" id="email_address">
+        <fieldset>
+          <label for="fn" name="fname">First Name</label>
+          <input type="text" id="fname" name="fname" placeholder="First Name">
         </fieldset>
-        <fieldset id="days">
-          <legend>How many nights?</legend>
-          <label> <input type="radio" name="days" id="nights?" required value="4_nights">4 Nights</label>
-          <label> <input type="radio" name="days" id="nights?" required value="5_nights">5 Nights</label>
-          <label> <input type="radio" name="days" id="nights?" required value="7_nights">7 Nights</label>
-        </fieldset>
-      
-        <fieldset id="extras">
-          <legend>Extras</legend>
-          <label> <input type="checkbox" name="extras" id="extras_baby" value="baby"> Baby Seat </label>
-          <label> <input type="checkbox" name="extras" id="extras_wheel" value="wheelchair"> Wheelchair Access </label>
-          <label> <input type="checkbox" name="extras" id="extras_tip" value="tip"> Stock Tip </label>
-        </fieldset>
-        
-        <fieldset id="departure">
-          <label for="departure">Departure Date/Time</label>
-          <input type="datetime-local" name="pickup_time" id="pickup_time" required>
-      
-          <label for="departure_airport">Departure Airport</label>
-          <select name="departure_airport" id="departure_airport">
-            <option value="" selected="selected">Select One</option>
-            <option value="newcasle" >Newcastle</option>
-            <option value="manchester" >Manchester</option>
-            <option value="liverpool" >Liverpool</option>
-            <option value="edinburgh">Edinburgh</option>
-            <option value="london">London</option>
-          </select>
-        </fieldset>
-      
-        <fieldset id="dropoff">
-        <label for="dropoff_place">Dropoff Place</label>
-          <input type="text" name="dropoff_place" id="dropoff_place" required list="destinations">
-      
-          <datalist id="destinations">
-            <option value="Airport">
-            <option value="Beach">
-            <option value="Hotel">
-          </datalist>
-        </fieldset>
-        
-        <fieldset id="instructions">
-          <label for="comments">Special Instructions</label>
-          <textarea name="comments" id="comments" maxlength="500"></textarea>
-        </fieldset>
-      
-        <button id="submit">Submit Booking</button>
-      
-      </form>
-    
 </body>
