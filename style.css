@@ -143,126 +143,28 @@ max-width: 100%;
     text-align: center;
     padding: 1rem;
  }
- .santorini {
-    background: url("image/santorini-greece.jpg");
-    background-size: cover;
-    background-position: center;
-    padding: 3rem;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-    box-shadow: var(--shadow);
-    color: var(--light);
-    
+ .grid {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+   grid-gap: 20px;
+   align-items: stretch;
  }
- .amsterdam {
-    background: url("image/amsterdam.jpg");
-    background-size: cover;
-    background-position: center;
-    padding: 3rem;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-    box-shadow: var(--shadow);
-    color: var(--light);
+ .grid > article {
+   border: 1px solid var(--primary);
+   box-shadow: 2px, 2px, 6px, opx var(--dark);
  }
- .venice {
-    background: url("image/venice-on-boat.jpg");
-    background-size: cover;
-    background-position: center;
-    padding: 3rem;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-    box-shadow: var(--shadow);
-    color: var(--light);
+ .grid > article img {
+   max-width: 100%;
  }
- .paris {
-    background: url("image/paris-eifel.jpg");
-    background-size: cover;
-    background-position: center;
-    padding: 3rem;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-    box-shadow: var(--shadow);
-    color: var(--light);
+ .text {
+   padding: 0 20px 20px;
  }
- .rome {
-    background: url("image/rome-night.jpg");
-    background-size: cover;
-    background-position: center;
-    padding: 3rem;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-    box-shadow: var(--shadow);
-    color: var(--light);
- }
- .maldives {
-    background: url("image/maldives-dest.jpg");
-    background-size: cover;
-    background-position: center;
-    padding: 3rem;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-    box-shadow: var(--shadow);
-    color: var(--light);
- }
- .bali {
-    background: url("image/bali-pull.jpg");
-    background-size: cover;
-    background-position: center;
-    padding: 3rem;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-    box-shadow: var(--shadow);
-    color: var(--light);
-
- }
- .bora-bora {
-    background: url("image/bora-bora-beach.jpg");
-    background-size: cover;
-    background-position: center;
-    padding: 3rem;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-    box-shadow: var(--shadow);
-    color: var(--light);
- }
- .hawaii {
-    background: url("image/hawaii-beach.jpg");
-    background-size: cover;
-    background-position: center;
-    padding: 3rem;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-    box-shadow: var(--shadow);
-    color: var(--light);
-
- }
- 
- .cards {
-    box-shadow: var(--shadow);
-    padding: 16px;
-    text-align: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    gap: 1rem;
+ .text > button {
+   background: var(--primary);
+   border: 0;
+   color: var(--light);
+   padding: 10px;
+   width: 100%;
  }
  
    
